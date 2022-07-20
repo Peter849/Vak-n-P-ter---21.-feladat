@@ -1,0 +1,25 @@
+//Feladat
+public class Feladat01 {
+    
+    public static void main(String args[]) {
+      //INPUT:
+      String[] szinek = {"piros", "kek", "zold", "alfa"};
+      int r = feladat01(szinek);
+      System.out.println("result = " + r);
+    }
+    
+    public static int feladat01(String[] szinek){
+        
+        if(szinek.length <= 1) return 0;
+        
+        int res = 1;
+        for(int i = 0; i < szinek.length; i++)
+        {
+            res = res * 2;
+        }
+        System.out.println(res);
+        res = res - (szinek.length + 1);
+        
+        return res;
+    }
+}
